@@ -8,22 +8,29 @@ header,
 
 /* Navbrand */
 .f-title {
-    font-family: 'Comfortaa', cursive;
-    color: #ffbb33;
+    font-family: 'Euphoria Script', cursive;
+    color: #CFB53B;
     font-weight: 400;
     letter-spacing: 4px;
+    font-size: 1.6em;
 }
 
 .s-title {
-    font-family: 'Comfortaa', cursive;
-    color: #388e3c;
+    font-family: 'Euphoria Script', cursive;
+    color: #CFB53B;
     font-weight: 400;
     letter-spacing: 4px;
+    font-size: 1.6em;
 }
 
 .a-title {
-    font-family: 'Comfortaa', cursive;
-    color: white;
+    font-family: 'Euphoria Script', cursive;
+    color:  #CFB53B;
     font-weight: 400;
     letter-spacing: 4px;
+    font-size: 1.6em;
+}
+
+.nav-title {
+    color: black;
 }
