@@ -11,8 +11,8 @@ header,
     font-family: 'Euphoria Script', cursive;
     color: #CFB53B;
     font-weight: 400;
-    letter-spacing: 4px;
-    font-size: 1.6em;
+    letter-spacing: 7px;
+    font-size: 40px;
 }
 
 .s-title {
@@ -20,7 +20,7 @@ header,
     color: #CFB53B;
     font-weight: 400;
     letter-spacing: 4px;
-    font-size: 1.6em;
+    font-size: 40px;
 }
 
 .a-title {
@@ -28,7 +28,7 @@ header,
     color:  #CFB53B;
     font-weight: 400;
     letter-spacing: 4px;
-    font-size: 1.6em;
+    font-size: 40px;
 }
 
 .nav-title {
