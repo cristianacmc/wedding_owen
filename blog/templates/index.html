@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>My MDB Django Project</title>
 
-  {% load static %}
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,13 +15,21 @@
   <!-- Material Design for Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
   <!--<link href="css/style.css" rel="stylesheet">-->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <!-- Customized font -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 <body>
 
   <!--Main Navigation-->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark elegant-color">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+          <h3>
+              <span class="f-title">Eoin</span><span class="a-title">&</span><span class="s-title">Orla</span>
+          </h3>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,11 +54,11 @@
   <!--Main Navigation-->
 
   <!--Main layout-->
-  <div class="row">
+  <div class="row mt-5 ml-2">
       <!--Grid column-->
       <div class="col-md-5 mt-5">
         <h2>Some awesome heading</h2>
-        <hr>
+        <hr class="text-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem
             voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis
             natus quaerat!</p>
@@ -59,73 +67,73 @@
         <div class="view overlay z-depth-1-half">
           <!--Featured image -->
           <img src="https://res.cloudinary.com/cmcosta/image/upload/v1547664802/orla/New-Years-Eve-Wedding.jpg" class="img-fluid">
-          <div class="mask rgba-white-light"></div>
+          <div class="mask mask rgba-red-light"></div>
         </div>
       </div>
   </div>
   <!--Grid column-->
 
   <main class="mt-5">
-    <div class="container">
+     <!--Section: Best Features-->
+    <section id="best-features" class="text-center">
 
-          <section id="best-features" class="text-center">
-          <!--Section: Best Features-->
+      <!-- Heading -->
+      <h2 class="mb-5 font-weight-bold">Best Features</h2>
 
-          <!-- Heading -->
-          <h2 class="mb-5">The Grand Day</h2>
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center mb-4">
 
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center mb-4">
+          <!--Grid column-->
+          <div class="col-md-8">
 
-              <!--Grid column-->
-              <div class="col-md-8">
-
-                  <!-- Description -->
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident nulla repellat
-                      facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis est
-                      sit pariatur.</p>
-
-              </div>
-              <!--Grid column-->
+              <!-- Description -->
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident nulla repellat
+                  facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis est
+                  sit pariatur.</p>
 
           </div>
-          <!--Grid row-->
+          <!--Grid column-->
 
-          <!--Grid row-->
-          <div class="row">
+      </div>
+      <!--Grid row-->
 
-              <!--Grid column-->
-              <div class="col-md-4 mb-1">
-                  <i class="fas fa-camera-retro"></i>
-                  <h4 class="my-4">Experience</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                      assumenda deleniti hic.</p>
-              </div>
-              <!--Grid column-->
+      <!--Grid row-->
+      <div class="row">
 
-              <!--Grid column-->
-              <div class="col-md-4 mb-1">
-                  <i class="fas fa-heart"></i>
-                  <h4 class="my-4">Happiness</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                      assumenda deleniti hic.</p>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4 mb-1">
-                  <i class="fas fa-bicycle"></i>
-                  <h4 class="my-4">Adventure</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                      assumenda deleniti hic.</p>
-              </div>
-              <!--Grid column-->
-
+          <!--Grid column-->
+          <div class="col-md-4 mb-5">
+              <i class="fas fa-camera-retro fa-4x orange-text"></i>
+              <h4 class="my-4 font-weight-bold">Experience</h4>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                  assumenda deleniti hic.</p>
           </div>
-          <!--Grid row-->
+          <!--Grid column-->
 
-        </section>
-        <!--Section: Best Features-->
+          <!--Grid column-->
+          <div class="col-md-4 mb-1">
+              <i class="fas fa-heart fa-4x orange-text"></i>
+              <h4 class="my-4 font-weight-bold">Happiness</h4>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                  assumenda deleniti hic.</p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4 mb-1">
+              <i class="fas fa-bicycle fa-4x orange-text"></i>
+              <h4 class="my-4 font-weight-bold">Adventure</h4>
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                  assumenda deleniti hic.</p>
+          </div>
+          <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+    <!--Section: Best Features-->
+
+
 
 
 

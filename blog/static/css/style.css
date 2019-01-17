@@ -1,0 +1,29 @@
+
+html,
+body,
+header,
+#intro {
+	height: 100%;
+}
+
+/* Navbrand */
+.f-title {
+    font-family: 'Comfortaa', cursive;
+    color: #ffbb33;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.s-title {
+    font-family: 'Comfortaa', cursive;
+    color: #388e3c;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.a-title {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
