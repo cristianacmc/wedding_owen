@@ -1,9 +1,13 @@
 
 html,
 body,
-header,
+header{
+	height: ;
+
+}
+
 #intro {
-	height: 100%;
+    height: 490px;
 }
 
 /* Navbrand */
@@ -33,4 +37,33 @@ header,
 
 .nav-title {
     color: black;
+}
+
+.about {
+    height: 70%;
+}
+
+#contact {
+    background-color: rgb(238, 238, 238);
+    visibility: visible;
+    animation-name: fadeIn;
+}
+
+.map-container{
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+height: 0;
+}
+
+.map-container iframe{
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+position: absolute;
+}
+
+.title {
+    color: #CFB53B;;
 }
